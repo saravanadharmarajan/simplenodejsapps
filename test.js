@@ -1,11 +1,5 @@
-describe('#sum()', function() {
+var expect = require('chai').expect;
+var numbers = [1, 2, 3, 4, 5];
 
-   // test a functionality
-  it('should add numbers', function() {
-    // add an assertion
-    expect(sum(1, 2, 3, 4, 5)).to.equal(15);
-  })
-
-  
-
-})
+expect(numbers).to.be.an('array').that.includes(2);
+expect(numbers).to.have.lengthOf(5);)
